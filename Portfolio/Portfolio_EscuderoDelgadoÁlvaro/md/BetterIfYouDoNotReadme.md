@@ -6,7 +6,7 @@
 
 ## 2. Tipografía
 
-- **Fuente Principal:** ``, sans-serif
+- **Fuente Principal:** sans-serif
 
 ## 3. Logo Personal
 
