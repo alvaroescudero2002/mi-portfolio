@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio de Álvaro Escudero Delgado, desarrollador web con experiencia en diseño y desarrollo de sitios web modernos.">
+    <title>Portfolio de Álvaro Escudero Delgado</title>
+    <link rel="stylesheet" href="CSS/styles.css"> <!-- Enlaza tu archivo CSS aquí -->
+</head>
+<body>
+    <!-- Encabezado -->
+    <header id="header">
+        <div class="container">
+            <h1>ÁLVARO ESCUDERO DELGADO</h1>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#sobre-mi">Sobre mí</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+            <!-- Enlace para descargar el currículum -->
+            <a href="ruta/a/tu-curriculum.pdf" download="Curriculum-Alvaro-Escudero-Delgado.pdf" class="btn-curriculum">
+                Descargar CV
+            </a>
+        </div>
+    </header>
+
+    <!-- Sección Sobre mí -->
+    <section id="sobre-mi" class="section">
+        <div class="container">
+            <div class="sobre-mi-content">
+                <img src="img/FOTO ÁLVARO.jpg" alt="Foto de Álvaro Escudero Delgado" class="foto-perfil">
+                <div>
+                    <h2>Sobre mí</h2>
+                    <p>
+                        ¡Hola! Soy Álvaro Escudero Delgado, un desarrollador web apasionado por crear sitios web modernos, responsivos y funcionales. 
+                        Tengo experiencia en tecnologías como HTML, CSS, JavaScript y frameworks como React. Me encanta aprender nuevas 
+                        herramientas y enfrentar desafíos creativos.
+                    </p>
+                    <!-- Enlace para descargar el currículum dentro de "Sobre mí" -->
+                    <a href="ruta/a/tu-curriculum.pdf" download="Curriculum-Alvaro-Escudero-Delgado.pdf" class="btn-curriculum">
+                        Descargar CV
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Proyectos -->
+    <section id="proyectos" class="section">
+        <div class="container">
+            <h2>Proyectos</h2>
+            <div class="proyecto">
+                <img src="proyecto1.jpg" alt="Descripción del Proyecto 1" class="proyecto-imagen">
+                <h3>Proyecto 1</h3>
+                <p>Descripción breve del proyecto. Tecnologías utilizadas: HTML, CSS, JavaScript.</p>
+                <a href="#" class="proyecto-enlace">Ver proyecto</a>
+            </div>
+            <div class="proyecto">
+                <img src="proyecto2.jpg" alt="Descripción del Proyecto 2" class="proyecto-imagen">
+                <h3>Proyecto 2</h3>
+                <p>Descripción breve del proyecto. Tecnologías utilizadas: React, Node.js.</p>
+                <a href="#" class="proyecto-enlace">Ver proyecto</a>
+            </div>
+            <!-- Añade más proyectos según sea necesario -->
+        </div>
+    </section>
+
+    <!-- Sección Habilidades -->
+    <section id="habilidades" class="section">
+        <div class="container">
+            <h2>Habilidades</h2>
+            <ul class="habilidades-lista">
+                <li><i class="fab fa-html5"></i> HTML5</li>
+                <li><i class="fab fa-css3-alt"></i> CSS3</li>
+                <li><i class="fab fa-js"></i> JavaScript</li>
+                <li><i class="fab fa-react"></i> React</li>
+                <li><i class="fab fa-node-js"></i> Node.js</li>
+                <!-- Añade más habilidades según sea necesario -->
+            </ul>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contacto" class="section">
+        <div class="container">
+            <h2>Contacto</h2>
+            <form id="formulario-contacto" action="#" method="POST">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn-enviar">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer id="footer">
+        <div class="container">
+            <p>&copy; 2023 Álvaro Escudero Delgado. Todos los derechos reservados.</p>
+            <ul class="social-links">
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fab fa-github"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Enlace a Font Awesome para íconos -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>
