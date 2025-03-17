@@ -1,12 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto - Hablemos</title>
     <link rel="icon" type="image/png" href="img/FAVICON.png">
+    <link rel="stylesheet" href="css/style2.css">
 </head>
+
 <body>
-    
+    <header>
+        <div class="contenedor-logo">
+            <img src="img/FAVICON.png" alt="Logo AED">
+            <span class="texto-logo">ÁLVARO ESCUDERO DELGADO</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="aboutme.html">Conóceme</a></li>
+                <li><a href="gallery.html">Galería</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>¿Necesitas un desarrollador?</h2>
+        <h1>CONTÁCTA CONMIGO</h1>
+
+        <section class="formulario-contacto">
+            <div class="logo-formulario">
+                <img src="img/FAVICON.png" alt="Logo AED">
+            </div>
+            <form>
+                <div class="campo">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Álvaro" required minlength="2"
+                        maxlength="50">
+                </div>
+                <div class="campo">
+                    <label for="apellidos">Apellidos:</label>
+                    <input type="text" id="apellidos" name="apellidos" placeholder="Escudero Delgado" required
+                        minlength="2" maxlength="50">
+                </div>
+                <div class="campo">
+                    <label>Género:</label>
+                    <div class="opciones-genero">
+                        <input type="radio" id="masculino" name="genero" value="masculino" required>
+                        <label for="masculino">Masculino</label>
+                        <input type="radio" id="femenino" name="genero" value="femenino">
+                        <label for="femenino">Femenino</label>
+                        <input type="radio" id="otro" name="genero" value="otro">
+                        <label for="otro">Otro</label>
+                    </div>
+                </div>
+                <div class="campo">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="alvaroescudero02@gmail.com" required>
+                </div>
+                <div class="campo">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" placeholder="Hola, necesito una web para mi negocio..." required
+                        minlength="10" maxlength="500"></textarea>
+                </div>
+                <div class="campo">
+                    <label for="motivo">Motivo de consulta:</label>
+                    <select id="motivo" name="motivo" required>
+                        <option value="" disabled selected>Seleccione un motivo</option>
+                        <option value="consulta">Consulta general</option>
+                        <option value="presupuesto">Presupuesto</option>
+                        <option value="soporte">Soporte técnico</option>
+                    </select>
+                </div>
+                <div class="campo casilla-verificacion">
+                    <input type="checkbox" id="terminos" name="terminos" required>
+                    <label for="terminos">Acepto los términos y condiciones</label>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Email: alvaroescudero02@gmail.com | Teléfono: +34 655 264 595 | Dirección: Dos Hermanas</p>
+        <div class="iconos-sociales">
+            <a href="https://www.linkedin.com/in/%C3%A1lvaro-escudero-delgado-30bb04245/" target="_blank">
+                <img src="img/LINKEDIN-LOGO.png" alt="LinkedIn">
+            </a>
+            <a href="https://www.instagram.com/alvaroescudero02/" target="_blank">
+                <img src="img/INSTAGRAM-LOGO.png" alt="Instagram">
+            </a>
+            <a href="https://github.com/alvaroescudero2002/" target="_blank">
+                <img src="img/GIT-LOGO.png" alt="GitHub">
+            </a>
+        </div>
+    </footer>
 </body>
+
 </html>

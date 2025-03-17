@@ -1,0 +1,148 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 40px;
+  background: black;
+  color: white;
+}
+
+.contenedor-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contenedor-logo img {
+  width: 40px;
+}
+
+.texto-logo {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+/* SECCIÓN PRINCIPAL */
+.seccion-principal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+}
+
+.texto-principal {
+  max-width: 50%;
+}
+
+.texto-principal h3 {
+  font-size: 28px;
+}
+
+.texto-principal h1 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.resaltado {
+  color: #2196f3;
+}
+
+.texto-principal p {
+  margin: 20px 0;
+}
+
+.boton {
+  padding: 10px 20px;
+  border: 2px solid black;
+  background: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* IMAGEN PRINCIPAL */
+.imagen-principal img {
+  width: 200px;
+  padding: 10px;
+}
+
+/* SECCIONES HABILIDADES */
+.habilidades-tecnicas, .habilidades-blandas {
+  padding: 40px;
+  background: #f5f5f5;
+}
+
+.habilidades-tecnicas h2, .habilidades-blandas h2 {
+  border-bottom: 3px solid black;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.habilidades-tecnicas ul, .habilidades-blandas ul {
+  list-style: none;
+}
+
+.habilidades-tecnicas li, .habilidades-blandas li {
+  margin: 10px 0;
+}
+
+/* FOOTER */
+footer {
+background: black;
+color: white;
+text-align: center;
+padding: 20px;
+}
+
+.iconos-sociales {
+margin-top: 10px;
+display: flex;
+justify-content: center;
+gap: 15px;
+}
+
+.iconos-sociales a img {
+width: 30px; /* Ajusta el tamaño de los logos */
+height: auto;
+transition: transform 0.3s ease-in-out;
+}
+
+.iconos-sociales a:hover img {
+transform: scale(1.2); /* Efecto al pasar el cursor */
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .seccion-principal {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .texto-principal {
+      max-width: 100%;
+  }
+
+  .imagen-principal img {
+      margin-top: 20px;
+  }
+
+  .contenedor-logo {
+      flex-direction: column;
+      text-align: center;
+  }
+}
