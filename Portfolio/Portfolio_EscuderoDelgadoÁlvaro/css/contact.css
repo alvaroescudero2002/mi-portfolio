@@ -1,0 +1,174 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+    background: black;
+    color: white;
+}
+
+.contenedor-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contenedor-logo img {
+    width: 40px;
+}
+
+.texto-logo {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+/* SECCIÓN PRINCIPAL */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 20px;
+    color: black;
+}
+
+h1 {
+    font-size: 30px;
+    color: black;
+}
+
+/* Contenedor del formulario */
+.formulario-contacto {
+    background-color: black;
+    padding: 50px;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 0 auto;
+    color: white;
+}
+.logo-formulario img {
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+/* Campos en paralelo */
+.campo-paralelo {
+    display: flex;
+    gap: 100px; /* Aumentamos el espacio entre los campos */
+}
+
+.campo-paralelo .campo {
+    flex: 1; /* Ambos campos ocupan el mismo espacio */
+}
+
+.campo {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: white;
+}
+
+.campo input,
+.campo textarea,
+.campo select {
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+.opciones-genero {
+    display: flex;
+    gap: 10px;
+}
+
+.opciones-genero label {
+    font-weight: normal;
+}
+
+.casilla-verificacion {
+    display: flex;
+    align-items: center;
+}
+
+button {
+    background-color: white;
+    padding: 10px 20px;
+    border: 1px solid black;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: grey;
+}
+
+/* FOOTER */
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.iconos-sociales {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.iconos-sociales a img {
+    width: 30px;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.iconos-sociales a:hover img {
+    transform: scale(1.2);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .seccion-principal {
+        flex-direction: column;
+        text-align: center;
+    }
+  
+    .texto-principal {
+        max-width: 100%;
+    }
+  
+    .imagen-principal img {
+        margin-top: 20px;
+    }
+  
+    .contenedor-logo {
+        flex-direction: column;
+        text-align: center;
+    }
+  }
