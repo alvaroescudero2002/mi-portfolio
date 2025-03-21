@@ -2,77 +2,144 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio - Habilidades Técnicas y Blandas</title>
-    <link rel="icon" type="image/png" href="img/FAVICON.png">
-    <link rel="stylesheet" href="css/index.css">
+    <!-- Define el tipo de documento y el idioma (español) -->
+    <meta charset="UTF-8"> <!-- Especifica la codificación de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Hace que la página sea responsive -->
+    <title>Inicio - Habilidades Técnicas y Blandas</title> <!-- Título de la página -->
+    <link rel="icon" type="image/png" href="img/FAVICON.png"> <!-- Ícono de la pestaña del navegador -->
+    <link rel="stylesheet" href="css/index.css"> <!-- Enlace a la hoja de estilos CSS personalizada -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> <!-- Enlace a Bootstrap CSS -->
 </head>
 
 <body>
 
+    <!-- Encabezado de la página -->
     <header>
         <div class="contenedor-logo">
-            <img src="img/FAVICON.png" alt="Logo AED">
-            <span class="texto-logo">ÁLVARO ESCUDERO DELGADO</span>
+            <img src="img/FAVICON.png" alt="Logo AED"> <!-- Logo de la página -->
+            <span class="texto-logo">ÁLVARO ESCUDERO DELGADO</span> <!-- Texto junto al logo -->
         </div>
+        <!-- Barra de navegación -->
         <nav>
             <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="gallery.html">Galería</a></li>
-                <li><a href="contact.html">Contacto</a></li>
-                <li><a href="aboutme.html">Conóceme</a></li>
+                <li><a href="index.html">Inicio</a></li> <!-- Enlace a la página de inicio -->
+                <li><a href="gallery.html">Galería</a></li> <!-- Enlace a la galería -->
+                <li><a href="contact.html">Contacto</a></li> <!-- Enlace a la página de contacto -->
+                <li><a href="aboutme.html">Conóceme</a></li> <!-- Enlace a la página "Sobre mí" -->
             </ul>
         </nav>
     </header>
 
+    <!-- Sección principal -->
     <section class="seccion-principal">
         <div class="texto-principal">
-            <h3>¡Hola, soy Álvaro!</h3>
-            <h1>WEB <span class="resaltado">DEVELOPER</span></h1>
+            <h3>¡Hola, soy Álvaro!</h3> <!-- Subtítulo -->
+            <h1>WEB <span class="resaltado">DEVELOPER</span></h1> <!-- Título principal con resaltado -->
             <p>Tengo 23 años y estudio Desarrollo de Aplicaciones Web (DAW) en ILERNA Sevilla (2024-2026). Me apasiona
                 el desarrollo web, la creación de experiencias digitales dinámicas y el aprendizaje continuo para
-                aportar soluciones innovadoras y eficientes.</p>
+                aportar soluciones innovadoras y eficientes.</p> <!-- Descripción personal -->
 
+            <!-- Botón para descargar el CV -->
             <a href="https://drive.google.com/file/d/1PDtPyoU8Ytbq6EnG68JMN12XWn7ICY27/view" target="_blank">
                 <button class="boton">Mi CV</button>
             </a>
 
         </div>
+        <!-- Imagen principal -->
         <div class="imagen-principal">
-            <img src="img/ÁLVARO-CANVA.png" alt="Foto de Álvaro">
+            <img src="img/ÁLVARO-CANVA.png" alt="Foto de Álvaro"> <!-- Imagen personal -->
         </div>
     </section>
 
+    <!-- Sección de habilidades técnicas -->
     <section class="habilidades-tecnicas">
-        <h2>HABILIDADES TÉCNICAS</h2>
-        <ul>
-            <li>Frontend: HTML, CSS, JavaScript.</li>
-            <li>Backend: Java.</li>
-            <li>Bases de Datos: MySQL.</li>
-            <li>Control de Versiones: Git.</li>
-        </ul>
+        <h2 class="titulo-bold">TECHNICAL SKILLS</h2> <!-- Título de la sección -->
+        <div class="imagenes-habilidades">
+            <!-- Cada habilidad técnica se representa con una imagen y un texto -->
+            <div class="habilidad-item">
+                <img src="img/JavaScript.jpg" alt="JavaScript">
+                <p class="texto-habilidad">JavaScript</p>
+            </div>
+            <div class="habilidad-item">
+                <img src="img/HTML5.jpg" alt="HTML5">
+                <p class="texto-habilidad">HTML5</p>
+            </div>
+            <div class="habilidad-item">
+                <img src="img/CSS3.jpg" alt="CSS3">
+                <p class="texto-habilidad">CSS3</p>
+            </div>
+            <div class="habilidad-item">
+                <img src="img/Bootstrap.jpg" alt="Bootstrap">
+                <p class="texto-habilidad">Bootstrap</p>
+            </div>
+            <div class="habilidad-item">
+                <img src="img/Git.jpg" alt="Git">
+                <p class="texto-habilidad">Git</p>
+            </div>
+            <div class="habilidad-item">
+                <img src="img/GitHub.jpg" alt="GitHub">
+                <p class="texto-habilidad">GitHub</p>
+            </div>
+            <div class="habilidad-item">
+                <img src="img/WordPress.jpg" alt="WordPress">
+                <p class="texto-habilidad">WordPress</p>
+            </div>
+            <div class="habilidad-item">
+                <img src="img/Markdown.jpg" alt="Markdown">
+                <p class="texto-habilidad">Markdown</p>
+            </div>
+            <div class="habilidad-item">
+                <img src="img/Java.jpg" alt="Java">
+                <p class="texto-habilidad">Java</p>
+            </div>
+            <div class="habilidad-item">
+                <img src="img/MySQL.jpg" alt="MySQL">
+                <p class="texto-habilidad">MySQL</p>
+            </div>
+            <div class="habilidad-item">
+                <img src="img/Bash.jpg" alt="Bash">
+                <p class="texto-habilidad">Bash</p>
+            </div>
+            <div class="habilidad-item">
+                <img src="img/VirtualBox.jpg" alt="VirtualBox">
+                <p class="texto-habilidad">VirtualBox</p>
+            </div>
+            <div class="habilidad-item">
+                <img src="img/XML.jpg" alt="XML">
+                <p class="texto-habilidad">XML</p>
+            </div>
+            <div class="habilidad-item">
+                <img src="img/Packet Tracer.jpg" alt="Packet Tracer">
+                <p class="texto-habilidad">Packet Tracer</p>
+            </div>
+        </div>
     </section>
 
+    <!-- Sección de habilidades blandas -->
     <section class="habilidades-blandas">
-        <h2>HABILIDADES BLANDAS</h2>
+        <h2 class="titulo-bold">SOFT SKILLS</h2> <!-- Título de la sección -->
         <ul>
-            <li>Trabajo en Equipo: Colaboración efectiva con diseñadores y desarrolladores.</li>
-            <li>Comunicación: Explicación clara de ideas técnicas.</li>
-            <li>Gestión del Tiempo: Organización y cumplimiento de plazos.</li>
-            <li>Adaptabilidad: Aprendizaje continuo de nuevas tecnologías.</li>
+            <!-- Lista de habilidades blandas -->
+            <li><span class="texto-bold">Trabajo en Equipo:</span> Colaboración efectiva con diseñadores y desarrolladores.</li>
+            <li><span class="texto-bold">Comunicación:</span> Explicación clara de ideas técnicas.</li>
+            <li><span class="texto-bold">Gestión del Tiempo:</span> Organización y cumplimiento de plazos.</li>
+            <li><span class="texto-bold">Adaptabilidad:</span> Aprendizaje continuo de nuevas tecnologías.</li>
         </ul>
     </section>
 
+    <!-- Pie de página -->
     <footer>
-        <p>Email: alvaroescudero02@gmail.com | Teléfono: +34 655 264 595 | Dirección: Dos Hermanas</p>
+        <p>Email: alvaroescudero02@gmail.com | Teléfono: +34 655 264 595 | Dirección: Dos Hermanas</p> <!-- Información de contacto -->
         <div class="iconos-sociales">
+            <!-- Enlace a LinkedIn -->
             <a href="https://www.linkedin.com/in/%C3%A1lvaro-escudero-delgado-30bb04245/" target="_blank">
                 <img src="img/LINKEDIN-LOGO.png" alt="LinkedIn">
             </a>
+            <!-- Enlace a Instagram -->
             <a href="https://www.instagram.com/alvaroescudero02/" target="_blank">
                 <img src="img/INSTAGRAM-LOGO.png" alt="Instagram">
             </a>
+            <!-- Enlace a GitHub -->
             <a href="https://github.com/alvaroescudero2002/" target="_blank">
                 <img src="img/GIT-LOGO.png" alt="GitHub">
             </a>

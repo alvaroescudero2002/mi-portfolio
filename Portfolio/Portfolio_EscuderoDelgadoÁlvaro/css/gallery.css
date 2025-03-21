@@ -44,70 +44,53 @@ nav ul li a {
     color: white; /* Texto blanco */
 }
 
-/* Estilos para la sección "Sobre mí" */
-.seccion-sobre-mi {
+/* Estilos para el contenedor principal */
+.contenedor-principal {
+    display: flex; /* Usa flexbox para alinear elementos */
+}
+
+/* Estilos para las imágenes laterales */
+.imagen-lateral {
+    width: 50%; /* Ancho del 50% del contenedor */
     display: flex; /* Usa flexbox para alinear elementos */
     align-items: center; /* Centra verticalmente los elementos */
-    padding: 40px; /* Añade relleno interno */
-    max-width: 1000px; /* Ancho máximo de la sección */
-    margin: auto; /* Centra la sección horizontalmente */
-}
-
-/* Estilos para el texto de la sección "Sobre mí" */
-.seccion-sobre-mi .texto {
-    flex: 1; /* Ocupa el espacio disponible */
-}
-
-/* Estilos para el título de la sección "Sobre mí" */
-.seccion-sobre-mi h2 {
-    margin: 20px 0; /* Añade margen superior e inferior */
-}
-
-/* Estilos para la imagen de la sección "Sobre mí" */
-.seccion-sobre-mi .imagen {
-    flex: 1; /* Ocupa el espacio disponible */
-    text-align: center; /* Centra la imagen horizontalmente */
-}
-
-/* Estilos para la imagen dentro de la sección "Sobre mí" */
-.seccion-sobre-mi .imagen img {
-    width: 400px; /* Ancho fijo para la imagen */
-}
-
-/* Estilos para la sección "Mis viajes" */
-.seccion-viajes {
-    text-align: center; /* Centra el contenido horizontalmente */
-    padding: 40px; /* Añade relleno interno */
     background-color: #f5f5f5; /* Fondo gris claro */
+    padding: 130px; /* Añade relleno interno */
 }
 
-/* Estilos para el título de la sección "Mis viajes" */
-.seccion-viajes h2 {
-    border-bottom: 3px solid black; /* Añade una línea inferior */
-    display: inline-block; /* Hace que el título ocupe solo el espacio necesario */
+/* Estilos para el contenedor de la galería */
+.contenedor-galeria {
+    width: 60%; /* Ancho del 60% del contenedor */
+    height: calc(100vh - 100px); /* Altura calculada (altura de la ventana menos 100px) */
+    overflow-y: auto; /* Habilita el desplazamiento vertical si el contenido es demasiado largo */
+    padding: 20px 0; /* Añade relleno interno */
 }
 
-/* Estilos para la galería de imágenes */
-.galeria {
-    display: grid; /* Usa CSS Grid para organizar las imágenes */
-    grid-template-columns: repeat(3, 1fr); /* Tres columnas de igual tamaño */
-    gap: 15px; /* Espacio entre las imágenes */
-    max-width: 800px; /* Ancho máximo de la galería */
-    margin: auto; /* Centra la galería horizontalmente */
+/* Estilos para la galería */
+.gallery {
+    display: flex; /* Usa flexbox para alinear elementos */
+    flex-direction: column; /* Organiza los elementos en una columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+    gap: 20px; /* Espacio entre los elementos */
 }
 
-/* Estilos para las imágenes de la galería */
-.galeria img {
-    width: 100%; /* Ancho completo del contenedor */
-    aspect-ratio: 1 / 1; /* Relación de aspecto cuadrada */
-    object-fit: cover; /* Ajusta la imagen para cubrir el espacio */
-    border-radius: 15px; /* Bordes redondeados */
+/* Estilos para los elementos de la galería */
+.gallery-item {
+    display: block; /* Hace que el elemento sea un bloque */
+    overflow: hidden; /* Oculta el contenido que desborda */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
     transition: transform 0.3s ease-in-out; /* Animación suave al hacer hover */
 }
 
-/* Efecto hover para las imágenes de la galería */
-.galeria img:hover {
-    transform: scale(1.05); /* Escala la imagen ligeramente */
+/* Efecto hover para los elementos de la galería */
+.gallery-item:hover {
+    transform: scale(1.05); /* Escala el elemento ligeramente */
+}
+
+/* Estilos para las imágenes dentro de los elementos de la galería */
+.gallery-item img {
+    width: 100%; /* Ancho completo del contenedor */
 }
 
 /* Estilos para el pie de página */
@@ -136,12 +119,41 @@ footer {
     transform: scale(1.2); /* Escala el icono ligeramente */
 }
 
+/* Estilos responsivos para pantallas de hasta 1024px de ancho */
+@media (max-width: 1024px) {
+    .contenedor-principal {
+        flex-direction: column; /* Cambia la dirección del flexbox a columna */
+    }
+
+    .imagen-lateral {
+        width: 100%; /* Ancho completo del contenedor */
+        padding: 10px; /* Reduce el relleno interno */
+    }
+
+    .contenedor-galeria {
+        width: 100%; /* Ancho completo del contenedor */
+        height: auto; /* Altura automática */
+        overflow-y: visible; /* Desactiva el desplazamiento vertical */
+    }
+
+    .gallery {
+        flex-direction: row; /* Organiza los elementos en una fila */
+        flex-wrap: wrap; /* Permite que los elementos se envuelvan */
+        justify-content: center; /* Centra los elementos horizontalmente */
+    }
+
+    .gallery-item {
+        width: 45%; /* Ancho del 45% del contenedor */
+    }
+}
+
 /* Estilos responsivos para pantallas de hasta 768px de ancho */
 @media (max-width: 768px) {
     header {
         flex-direction: column; /* Cambia la dirección del flexbox a columna */
         align-items: center; /* Centra los elementos horizontalmente */
         text-align: center; /* Centra el texto */
+        padding: 10px 20px; /* Reduce el relleno interno */
     }
 
     nav ul {
@@ -149,22 +161,16 @@ footer {
         gap: 10px; /* Espacio entre los elementos de la lista */
     }
 
-    .seccion-sobre-mi {
-        flex-direction: column; /* Cambia la dirección del flexbox a columna */
-        padding: 20px; /* Reduce el relleno interno */
+    .imagen-lateral {
+        display: none; /* Oculta las imágenes laterales */
     }
 
-    .seccion-sobre-mi .texto {
-        text-align: center; /* Centra el texto */
+    .contenedor-galeria {
+        padding: 10px; /* Reduce el relleno interno */
     }
 
-    .seccion-sobre-mi .imagen img {
+    .gallery-item {
         width: 100%; /* Ancho completo del contenedor */
-        max-width: 300px; /* Ancho máximo para la imagen */
-    }
-
-    .galeria {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Ajusta el número de columnas automáticamente */
     }
 }
 
@@ -174,15 +180,7 @@ footer {
         font-size: 16px; /* Reduce el tamaño de la fuente */
     }
 
-    .seccion-sobre-mi h2 {
-        font-size: 20px; /* Reduce el tamaño de la fuente */
-    }
-
-    .seccion-viajes h2 {
-        font-size: 20px; /* Reduce el tamaño de la fuente */
-    }
-
-    .galeria {
-        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Ajusta el número de columnas automáticamente */
+    .gallery-item {
+        width: 100%; /* Ancho completo del contenedor */
     }
 }
