@@ -1,10 +1,11 @@
-/* Estilos generales para el cuerpo de la página */
+/* --- 1. ESTILOS GENERALES --- */
 body {
   margin: 0; /* Elimina el margen predeterminado del navegador */
   font-family: Arial, Helvetica, sans-serif; /* Define la fuente predeterminada */
 }
+/* --- FIN DE 1. ESTILOS GENERALES --- */
 
-/* Estilos para el encabezado */
+/* --- 2. ENCABEZADO (HEADER) --- */
 header {
   display: flex; /* Usa flexbox para alinear elementos */
   justify-content: space-between; /* Distribuye el espacio entre los elementos */
@@ -13,38 +14,34 @@ header {
   color: white; /* Texto blanco */
 }
 
-/* Estilos para el contenedor del logo */
 .contenedor-logo {
   display: flex; /* Usa flexbox para alinear elementos */
   align-items: center; /* Centra verticalmente los elementos */
   gap: 10px; /* Espacio entre el logo y el texto */
 }
 
-/* Estilos para la imagen del logo */
 .contenedor-logo img {
   width: 40px; /* Ancho fijo para la imagen del logo */
 }
 
-/* Estilos para el texto del logo */
 .texto-logo {
   font-weight: bold; /* Texto en negrita */
   font-size: 18px; /* Tamaño de fuente */
 }
 
-/* Estilos para la barra de navegación */
 nav ul {
   list-style: none; /* Elimina los estilos de lista predeterminados */
   display: flex; /* Usa flexbox para alinear elementos */
   gap: 20px; /* Espacio entre los elementos de la lista */
 }
 
-/* Estilos para los enlaces de la barra de navegación */
 nav ul li a {
   text-decoration: none; /* Elimina el subrayado de los enlaces */
   color: white; /* Texto blanco */
 }
+/* --- FIN DE 2. ENCABEZADO (HEADER) --- */
 
-/* Estilos para la sección principal */
+/* --- 3. SECCIÓN PRINCIPAL --- */
 .seccion-principal {
   display: flex; /* Usa flexbox para alinear elementos */
   align-items: center; /* Centra verticalmente los elementos */
@@ -53,35 +50,29 @@ nav ul li a {
   gap: 40px; /* Espacio entre los elementos */
 }
 
-/* Estilos para el texto principal */
 .texto-principal {
   max-width: 40%; /* Ancho máximo del texto */
 }
 
-/* Estilos para el subtítulo */
 .texto-principal h3 {
   font-size: 28px; /* Tamaño de fuente */
   margin: 0; /* Elimina el margen predeterminado */
 }
 
-/* Estilos para el título principal */
 .texto-principal h1 {
   font-size: 32px; /* Tamaño de fuente */
   font-weight: bold; /* Texto en negrita */
   margin: 10px 0; /* Margen superior e inferior */
 }
 
-/* Estilos para el texto resaltado */
 .resaltado {
   color: #2196f3; /* Color azul */
 }
 
-/* Estilos para el párrafo */
 .texto-principal p {
   margin: 20px 0; /* Margen superior e inferior */
 }
 
-/* Estilos para el botón */
 .boton {
   padding: 10px 20px; /* Relleno interno */
   border: 2px solid black; /* Borde negro */
@@ -90,19 +81,18 @@ nav ul li a {
   font-weight: bold; /* Texto en negrita */
 }
 
-/* Estilos para la imagen principal */
 .imagen-principal img {
   width: 400px; /* Ancho fijo para la imagen */
 }
+/* --- FIN DE 3. SECCIÓN PRINCIPAL --- */
 
-/* Estilos para la sección de habilidades técnicas */
+/* --- 4. HABILIDADES TÉCNICAS --- */
 .habilidades-tecnicas {
   padding: 40px; /* Añade relleno interno */
   background: #f5f5f5; /* Fondo gris claro */
   text-align: center; /* Centra el contenido horizontalmente */
 }
 
-/* Estilos para el título de la sección */
 .titulo-bold {
   font-weight: bold; /* Texto en negrita */
   border-bottom: 3px solid black; /* Línea inferior */
@@ -110,19 +100,16 @@ nav ul li a {
   margin-bottom: 40px; /* Margen inferior */
 }
 
-/* Estilos para cada ítem de habilidad */
 .habilidad-item {
   display: flex; /* Usa flexbox para alinear elementos */
   flex-direction: column; /* Organiza los elementos en una columna */
   gap: 10px; /* Espacio entre los elementos */
 }
 
-/* Estilos para el texto de la habilidad */
 .texto-habilidad {
   font-weight: bold; /* Texto en negrita */
 }
 
-/* Estilos para la galería de habilidades técnicas */
 .imagenes-habilidades {
   display: grid; /* Usa CSS Grid para organizar las imágenes */
   grid-template-columns: repeat(7, 1fr); /* Siete columnas de igual tamaño */
@@ -131,30 +118,27 @@ nav ul li a {
   margin: auto; /* Centra la galería horizontalmente */
 }
 
-/* Estilos para las imágenes de la galería */
 .imagenes-habilidades img {
   width: 100%; /* Ancho completo del contenedor */
   border-radius: 15px; /* Bordes redondeados */
   transition: transform 0.3s ease-in-out; /* Animación suave al hacer hover */
 }
 
-/* Efecto hover para las imágenes de la galería */
 .imagenes-habilidades img:hover {
   transform: scale(1.05); /* Escala la imagen ligeramente */
 }
+/* --- FIN DE 4. HABILIDADES TÉCNICAS --- */
 
-/* Estilos para la sección de habilidades blandas */
+/* --- 5. HABILIDADES BLANDAS --- */
 .habilidades-blandas {
   padding: 40px; /* Añade relleno interno */
   text-align: center; /* Centra el contenido horizontalmente */
 }
 
-/* Estilos para el texto en negrita */
 .texto-bold {
   font-weight: bold; /* Texto en negrita */
 }
 
-/* Estilos para la lista de habilidades blandas */
 .habilidades-blandas ul {
   list-style: none; /* Elimina los estilos de lista predeterminados */
   padding: 0; /* Elimina el relleno predeterminado */
@@ -163,21 +147,20 @@ nav ul li a {
   text-align: left; /* Alinea el texto a la izquierda */
 }
 
-/* Estilos para los ítems de la lista de habilidades blandas */
 .habilidades-blandas li {
   margin: 10px 0; /* Margen superior e inferior */
   position: relative; /* Posición relativa para el pseudo-elemento */
   padding-left: 20px; /* Relleno izquierdo para el pseudo-elemento */
 }
 
-/* Estilos para el pseudo-elemento (punto) de la lista */
 .habilidades-blandas li::before {
   content: "•"; /* Añade un punto */
   position: absolute; /* Posición absoluta */
   left: 0; /* Alinea a la izquierda */
 }
+/* --- FIN DE 5. HABILIDADES BLANDAS --- */
 
-/* Estilos para el pie de página */
+/* --- 6. PIE DE PÁGINA (FOOTER) --- */
 footer {
   background: black; /* Fondo negro */
   color: white; /* Texto blanco */
@@ -185,25 +168,23 @@ footer {
   padding: 20px; /* Añade relleno interno */
 }
 
-/* Estilos para los iconos de redes sociales */
 .iconos-sociales {
   display: flex; /* Usa flexbox para alinear elementos */
   justify-content: center; /* Centra los iconos horizontalmente */
   gap: 15px; /* Espacio entre los iconos */
 }
 
-/* Estilos para las imágenes de los iconos de redes sociales */
 .iconos-sociales a img {
   width: 30px; /* Ancho fijo para los iconos */
   transition: transform 0.3s ease-in-out; /* Animación suave al hacer hover */
 }
 
-/* Efecto hover para los iconos de redes sociales */
 .iconos-sociales a:hover img {
   transform: scale(1.2); /* Escala el icono ligeramente */
 }
+/* --- FIN DE 6. PIE DE PÁGINA (FOOTER) --- */
 
-/* Estilos responsivos para pantallas de hasta 1024px de ancho */
+/* --- 7. ESTILOS RESPONSIVOS --- */
 @media (max-width: 1024px) {
   .seccion-principal {
     flex-direction: column; /* Cambia la dirección del flexbox a columna */
@@ -223,7 +204,6 @@ footer {
   }
 }
 
-/* Estilos responsivos para pantallas de hasta 768px de ancho */
 @media (max-width: 768px) {
   header {
     flex-direction: column; /* Cambia la dirección del flexbox a columna */
@@ -255,7 +235,6 @@ footer {
   }
 }
 
-/* Estilos responsivos para pantallas de hasta 480px de ancho */
 @media (max-width: 480px) {
   .texto-logo {
     font-size: 16px; /* Reduce el tamaño de la fuente */
@@ -281,3 +260,4 @@ footer {
     padding-left: 20px; /* Añade relleno izquierdo */
   }
 }
+/* --- FIN DE 7. ESTILOS RESPONSIVOS --- */

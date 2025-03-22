@@ -1,10 +1,11 @@
-/* Estilos generales para el cuerpo de la página */
+/* --- 1. ESTILOS GENERALES --- */
 body {
     margin: 0; /* Elimina el margen predeterminado del navegador */
     font-family: Arial, Helvetica, sans-serif; /* Define la fuente predeterminada */
 }
+/* --- FIN DE 1. ESTILOS GENERALES --- */
 
-/* Estilos para el encabezado */
+/* --- 2. ENCABEZADO (HEADER) --- */
 header {
     display: flex; /* Usa flexbox para alinear elementos */
     justify-content: space-between; /* Distribuye el espacio entre los elementos */
@@ -13,43 +14,38 @@ header {
     color: white; /* Texto blanco */
 }
 
-/* Estilos para el contenedor del logo */
 .contenedor-logo {
     display: flex; /* Usa flexbox para alinear elementos */
     align-items: center; /* Centra verticalmente los elementos */
     gap: 10px; /* Espacio entre el logo y el texto */
 }
 
-/* Estilos para la imagen del logo */
 .contenedor-logo img {
     width: 40px; /* Ancho fijo para la imagen del logo */
 }
 
-/* Estilos para el texto del logo */
 .texto-logo {
     font-weight: bold; /* Texto en negrita */
     font-size: 18px; /* Tamaño de fuente */
 }
 
-/* Estilos para la barra de navegación */
 nav ul {
     list-style: none; /* Elimina los estilos de lista predeterminados */
     display: flex; /* Usa flexbox para alinear elementos */
     gap: 20px; /* Espacio entre los elementos de la lista */
 }
 
-/* Estilos para los enlaces de la barra de navegación */
 nav ul li a {
     text-decoration: none; /* Elimina el subrayado de los enlaces */
     color: white; /* Texto blanco */
 }
+/* --- FIN DE 2. ENCABEZADO (HEADER) --- */
 
-/* Estilos para el contenedor principal */
+/* --- 3. CONTENEDOR PRINCIPAL --- */
 .contenedor-principal {
     display: flex; /* Usa flexbox para alinear elementos */
 }
 
-/* Estilos para las imágenes laterales */
 .imagen-lateral {
     width: 50%; /* Ancho del 50% del contenedor */
     display: flex; /* Usa flexbox para alinear elementos */
@@ -58,15 +54,15 @@ nav ul li a {
     padding: 130px; /* Añade relleno interno */
 }
 
-/* Estilos para el contenedor de la galería */
 .contenedor-galeria {
     width: 60%; /* Ancho del 60% del contenedor */
     height: calc(100vh - 100px); /* Altura calculada (altura de la ventana menos 100px) */
     overflow-y: auto; /* Habilita el desplazamiento vertical si el contenido es demasiado largo */
     padding: 20px 0; /* Añade relleno interno */
 }
+/* --- FIN DE 3. CONTENEDOR PRINCIPAL --- */
 
-/* Estilos para la galería */
+/* --- 4. GALERÍA --- */
 .gallery {
     display: flex; /* Usa flexbox para alinear elementos */
     flex-direction: column; /* Organiza los elementos en una columna */
@@ -74,7 +70,6 @@ nav ul li a {
     gap: 20px; /* Espacio entre los elementos */
 }
 
-/* Estilos para los elementos de la galería */
 .gallery-item {
     display: block; /* Hace que el elemento sea un bloque */
     overflow: hidden; /* Oculta el contenido que desborda */
@@ -83,17 +78,16 @@ nav ul li a {
     transition: transform 0.3s ease-in-out; /* Animación suave al hacer hover */
 }
 
-/* Efecto hover para los elementos de la galería */
 .gallery-item:hover {
     transform: scale(1.05); /* Escala el elemento ligeramente */
 }
 
-/* Estilos para las imágenes dentro de los elementos de la galería */
 .gallery-item img {
     width: 100%; /* Ancho completo del contenedor */
 }
+/* --- FIN DE 4. GALERÍA --- */
 
-/* Estilos para el pie de página */
+/* --- 5. PIE DE PÁGINA (FOOTER) --- */
 footer {
     background: black; /* Fondo negro */
     color: white; /* Texto blanco */
@@ -101,25 +95,23 @@ footer {
     padding: 20px; /* Añade relleno interno */
 }
 
-/* Estilos para los iconos de redes sociales */
 .iconos-sociales {
     display: flex; /* Usa flexbox para alinear elementos */
     justify-content: center; /* Centra los iconos horizontalmente */
     gap: 15px; /* Espacio entre los iconos */
 }
 
-/* Estilos para las imágenes de los iconos de redes sociales */
 .iconos-sociales a img {
     width: 30px; /* Ancho fijo para los iconos */
     transition: transform 0.3s ease-in-out; /* Animación suave al hacer hover */
 }
 
-/* Efecto hover para los iconos de redes sociales */
 .iconos-sociales a:hover img {
     transform: scale(1.2); /* Escala el icono ligeramente */
 }
+/* --- FIN DE 5. PIE DE PÁGINA (FOOTER) --- */
 
-/* Estilos responsivos para pantallas de hasta 1024px de ancho */
+/* --- 6. ESTILOS RESPONSIVOS --- */
 @media (max-width: 1024px) {
     .contenedor-principal {
         flex-direction: column; /* Cambia la dirección del flexbox a columna */
@@ -147,7 +139,6 @@ footer {
     }
 }
 
-/* Estilos responsivos para pantallas de hasta 768px de ancho */
 @media (max-width: 768px) {
     header {
         flex-direction: column; /* Cambia la dirección del flexbox a columna */
@@ -174,7 +165,6 @@ footer {
     }
 }
 
-/* Estilos responsivos para pantallas de hasta 480px de ancho */
 @media (max-width: 480px) {
     .texto-logo {
         font-size: 16px; /* Reduce el tamaño de la fuente */
@@ -184,3 +174,4 @@ footer {
         width: 100%; /* Ancho completo del contenedor */
     }
 }
+/* --- FIN DE 6. ESTILOS RESPONSIVOS --- */
