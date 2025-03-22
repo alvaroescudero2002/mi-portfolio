@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Define el tipo de documento y el idioma (español) -->
+    <meta charset="UTF-8"> <!-- Especifica la codificación de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Hace que la página sea responsive -->
+    <title>Contacto - Hablemos</title> <!-- Título de la página -->
+    <link rel="icon" type="image/png" href="img/FAVICON.png"> <!-- Ícono de la pestaña del navegador -->
+    <link rel="stylesheet" href="css/contact.css"> <!-- Enlace a la hoja de estilos CSS -->
+</head>
+
+<body>
+    <!-- Encabezado de la página -->
+    <header>
+        <div class="contenedor-logo">
+            <img src="img/FAVICON.png" alt="Logo AED"> <!-- Logo de la página -->
+            <span class="texto-logo">ÁLVARO ESCUDERO DELGADO</span> <!-- Texto junto al logo -->
+        </div>
+        <!-- Barra de navegación -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li> <!-- Enlace a la página de inicio -->
+                <li><a href="gallery.html">Galería</a></li> <!-- Enlace a la galería -->
+                <li><a href="contact.html">Contacto</a></li> <!-- Enlace a la página de contacto -->
+                <li><a href="aboutme.html">Conóceme</a></li> <!-- Enlace a la página "Sobre mí" -->
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido principal de la página -->
+    <main>
+        <h2>¿Necesitas un desarrollador?</h2> <!-- Subtítulo -->
+        <h1>CONTÁCTA CONMIGO</h1> <!-- Título principal -->
+
+        <!-- Sección del formulario de contacto -->
+        <section class="formulario-contacto">
+            <div class="logo-formulario">
+                <img src="img/FAVICON.png" alt="Logo AED"> <!-- Logo dentro del formulario -->
+            </div>
+            <!-- Formulario de contacto -->
+            <form>
+                <!-- Campos paralelos (Nombre y Apellidos) -->
+                <div class="campo-paralelo">
+                    <div class="campo">
+                        <label for="nombre">Nombre:</label> <!-- Etiqueta para el campo de nombre -->
+                        <input type="text" id="nombre" name="nombre" placeholder="Álvaro" required minlength="2" maxlength="50"> <!-- Campo de entrada para el nombre -->
+                    </div>
+                    <div class="campo">
+                        <label for="apellidos">Apellidos:</label> <!-- Etiqueta para el campo de apellidos -->
+                        <input type="text" id="apellidos" name="apellidos" placeholder="Escudero Delgado" required minlength="2" maxlength="50"> <!-- Campo de entrada para los apellidos -->
+                    </div>
+                </div>
+
+                <!-- Campos paralelos (Género y Email) -->
+                <div class="campo-paralelo">
+                    <div class="campo">
+                        <label>Género:</label> <!-- Etiqueta para el campo de género -->
+                        <div class="opciones-genero">
+                            <!-- Opciones de género -->
+                            <input type="radio" id="masculino" name="genero" value="masculino" required> <!-- Opción masculino -->
+                            <label for="masculino">Masculino</label>
+                            <input type="radio" id="femenino" name="genero" value="femenino"> <!-- Opción femenino -->
+                            <label for="femenino">Femenino</label>
+                            <input type="radio" id="otro" name="genero" value="otro"> <!-- Opción otro -->
+                            <label for="otro">Otro</label>
+                        </div>
+                    </div>
+                    <div class="campo">
+                        <label for="email">Email:</label> <!-- Etiqueta para el campo de email -->
+                        <input type="email" id="email" name="email" placeholder="alvaroescudero02@gmail.com" required> <!-- Campo de entrada para el email -->
+                    </div>
+                </div>
+
+                <!-- Campo de mensaje -->
+                <div class="campo">
+                    <label for="mensaje">Mensaje:</label> <!-- Etiqueta para el campo de mensaje -->
+                    <textarea id="mensaje" name="mensaje" placeholder="Hola, necesito una web para mi negocio..." required minlength="10" maxlength="500"></textarea> <!-- Área de texto para el mensaje -->
+                </div>
+
+                <!-- Campo de motivo de consulta -->
+                <div class="campo">
+                    <label for="motivo">Motivo de consulta:</label> <!-- Etiqueta para el campo de motivo -->
+                    <select id="motivo" name="motivo" required> <!-- Lista desplegable para el motivo -->
+                        <option value="" disabled selected>Seleccione un motivo</option> <!-- Opción por defecto -->
+                        <option value="consulta">Consulta general</option> <!-- Opción de consulta general -->
+                        <option value="presupuesto">Presupuesto</option> <!-- Opción de presupuesto -->
+                        <option value="soporte">Soporte técnico</option> <!-- Opción de soporte técnico -->
+                    </select>
+                </div>
+
+                <!-- Casilla de verificación de términos y condiciones -->
+                <div class="campo">
+                    <div class="casilla-verificacion">
+                        <input type="checkbox" id="terminos" name="terminos" required> <!-- Casilla de verificación -->
+                        <label for="terminos">Acepto los términos y condiciones</label> <!-- Etiqueta para la casilla -->
+                    </div>
+                </div>
+
+                <!-- Botón de enviar -->
+                <div class="campo boton-enviar">
+                    <button type="submit">Enviar</button> <!-- Botón para enviar el formulario -->
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>Email: alvaroescudero02@gmail.com | Teléfono: +34 655 264 595 | Dirección: Dos Hermanas</p> <!-- Información de contacto -->
+        <div class="iconos-sociales">
+            <!-- Enlace a LinkedIn -->
+            <a href="https://www.linkedin.com/in/%C3%A1lvaro-escudero-delgado-30bb04245/" target="_blank">
+                <img src="img/LINKEDIN-LOGO.png" alt="LinkedIn">
+            </a>
+            <!-- Enlace a Instagram -->
+            <a href="https://www.instagram.com/alvaroescudero02/" target="_blank">
+                <img src="img/INSTAGRAM-LOGO.png" alt="Instagram">
+            </a>
+            <!-- Enlace a GitHub -->
+            <a href="https://github.com/alvaroescudero2002/" target="_blank">
+                <img src="img/GIT-LOGO.png" alt="GitHub">
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>
